@@ -20,7 +20,8 @@ export default {
   babel({
       exclude: 'node_modules/**',  // 排除node_modules 下的文件
       runtimeHelpers: true
-  })
+  }),
+  uglify()
  ],
   output: [{
     file: 'build/jsonp.js',

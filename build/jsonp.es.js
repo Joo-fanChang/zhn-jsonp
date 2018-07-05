@@ -11,12 +11,12 @@ const jsonp = (url, opt = {}) => {
       }
     }
 
-    url += `${cbKey}=${cbName}`;
+    url += (url.includes('?') ? '&' : '?') + `${cbKey}=${cbName}`;
 
     try {
       var script = document.createElement('script');
       script.setAttribute('src', url);
-
+      document.body.appendChild(script);
       window[cbName] = data => resolve(data);
     } catch (e) {
       reject(e);
