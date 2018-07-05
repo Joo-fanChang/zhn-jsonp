@@ -1,6 +1,6 @@
 {
   "name": "changzhn-jsonp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./build/jsonp.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Joo-fanChang/changzhn-jsonp.git"
+    "url": "git+https://github.com/Joo-fanChang/zhn-jsonp.git"
   },
   "keywords": [
     "javascript",
@@ -20,9 +20,9 @@
   "author": "changzhn",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Joo-fanChang/changzhn-jsonp/issues"
+    "url": "https://github.com/Joo-fanChang/zhn-jsonp/issues"
   },
-  "homepage": "https://github.com/Joo-fanChang/changzhn-jsonp#readme",
+  "homepage": "https://github.com/Joo-fanChang/zhn-jsonp#readme",
   "devDependencies": {},
   "dependencies": {
     "babel-core": "^6.26.3",
