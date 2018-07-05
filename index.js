@@ -1,1 +1,3 @@
-module.exports = require('./src/jsonp.js');
+import jsonp from './lib/jsonp.js';
+
+export default jsonp;

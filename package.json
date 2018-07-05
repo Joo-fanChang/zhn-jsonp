@@ -2,11 +2,35 @@
   "name": "changzhn-jsonp",
   "version": "1.0.0",
   "description": "",
-  "main": "/build/index.js",
+  "main": "./build/jsonp.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "prepublish": "npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joo-fanChang/changzhn-jsonp.git"
+  },
+  "keywords": [
+    "javascript",
+    "plugin",
+    "jsonp"
+  ],
+  "author": "changzhn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Joo-fanChang/changzhn-jsonp/issues"
+  },
+  "homepage": "https://github.com/Joo-fanChang/changzhn-jsonp#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "rollup": "^0.62.0",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-json": "^3.0.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^4.0.0"
+  }
 }
