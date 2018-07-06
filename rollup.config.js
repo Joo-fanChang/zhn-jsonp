@@ -2,6 +2,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import json from 'rollup-plugin-json';
 import babel from 'rollup-plugin-babel';
+import minify from 'rollup-plugin-minify-es';
 
 export default {
   input: 'index.js',
@@ -20,6 +21,7 @@ export default {
       exclude: 'node_modules/**',  // 排除node_modules 下的文件
       runtimeHelpers: true
   }),
+  minify()
  ],
   output: [{
     file: 'build/jsonp.js',
